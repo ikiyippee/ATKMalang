@@ -1,0 +1,61 @@
+public class ATKMalang {
+
+    /**
+     * @param args the command line arguments
+     */
+    public static void main(String[] args) {
+     Scanner in = new Scanner (System.in);
+     String atk;
+     int harga = 0;
+     int uang;
+     
+        System.out.println("PILIHAN BARANG");
+        System.out.println("");
+        System.out.println("1.Pensil Warna");
+        System.out.println("2.Bulpoint");
+        System.out.println("3.Buku Tulis");
+        System.out.println("4.Penggaris");
+        System.out.println("5.Penghapus Pensil");
+        System.out.println("6.Spidol Warna");
+        System.out.println("7.Krayon TITI 36");
+        System.out.println("");
+        System.out.println("~~~~~~~~~~~~~");
+        System.out.println("");
+        atk=in.next();
+        
+        System.out.println("TOTAL HARGA BARANG YANG DI AMBIL");
+        switch(atk){
+            case "1":
+                System.out.println("Rp.20000");harga=20000;break;
+            case "2":
+                System.out.println("Rp.5000");harga=5000;break;
+            case "3":
+                System.out.println("Rp.3000");harga=3000;break;
+            case "4":
+                System.out.println("rp.2500");harga=2500;break;
+            case "5":
+                System.out.println("Rp.1000");harga=1000;break;
+            case "6":
+                System.out.println("Rp.2500");harga=2500;break;
+            case "7":
+                System.out.println("Rp.45000");harga=45000;break;
+            default :
+                System.out.println("MAAF BARANG TIDAK TERSEDIA");
+                
+                
+                
+        }
+        System.out.print("Masukkan uang anda: ");
+        uang = in.nextInt();
+        
+        if (uang>=harga){
+            System.out.println("Uang kembalian anda :"+ (uang-harga));
+        }else{
+            System.out.println("Mohon Maaf Uang Anda Kurang");
+        }
+        
+        
+    }
+    
+    
+}
